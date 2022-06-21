@@ -1,0 +1,28 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "mkdir -p build/debug && cd build/debug && cmake -DCMAKE_BUILD_TYPE=Debug ../.. && make -j8 && make install",
+            "type": "shell",
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "build release",
+            "command": "mkdir -p build/release && cd build/release && cmake -DCMAKE_BUILD_TYPE=Release ../.. && make -j8 && make install",
+            "type": "shell",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "isBuildCommand": true
+        }
+    ]
+}
