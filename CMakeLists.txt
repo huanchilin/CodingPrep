@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0.0)
 
-project(mac_CMAKE VERSION 0.1.0)
+project(CodingPrep VERSION 0.1.0)
 
 AUX_SOURCE_DIRECTORY(./src SRC)
 
