@@ -1,22 +1,22 @@
+#include <string>
 
-#include <iostream>
-#include <array>
-#include <vector>
-#include <queue>
 using namespace std;
+
+template <typename T> class LinkNode {
+
+    public:
+
+        LinkNode(T x) {data = x;};
+
+        LinkNode* nodePtr = nullptr;
+        LinkNode* leftNode = nullptr;
+        LinkNode* rightNode = nullptr;
+
+        T data;
+};
 
 int main() {
 
-    char test[] = "rzrr";
-    for (int i = 0; test[i]; i++) {
-        if (test[i] == 'z')
-            cout<<"gotcha" << endl;
-        cout<< test[i] << " ";
-    }
-    cout<<endl;
-
-    std::queue<std::pair<int, int>> testt;
-
-
+    string str= "1346";
     return 0;
 }

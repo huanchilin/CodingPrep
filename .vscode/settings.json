@@ -2,7 +2,14 @@
     "cmake.configureOnOpen": false,
     "cmake.buildDirectory": "${workspaceFolder}/build/${buildType}/",
     "files.associations": {
-        "memory": "cpp"
+        "memory": "cpp",
+        "array": "cpp",
+        "algorithm": "cpp",
+        "string": "cpp",
+        "__config": "cpp",
+        "__nullptr": "cpp",
+        "iosfwd": "cpp",
+        "unordered_set": "cpp"
     },
     "C_Cpp.default.cppStandard": "c++11"
 }
