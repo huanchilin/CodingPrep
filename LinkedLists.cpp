@@ -10,3 +10,12 @@ template <typename T> class LinkNode {
 
         T data;
 };
+
+class LinkedList {
+    public:
+
+    LinkedList(){};
+    LinkedList(LinkNode *p) {head = p;};
+
+    LinkNode* head = nullptr;
+}
